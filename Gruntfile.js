@@ -28,18 +28,11 @@ module.exports = function(grunt) {
         },
         jshint: {
             // which files the task should operate:
-            all: ['Gruntfile.js', 'www/js/*.js'],
+            all: ['Gruntfile.js', 'js/*.js'],
         },
         karma: {
-            options: {
-                configFile: 'config/karma.conf.js'
-            },
             unit: {
-                configFile: 'karma.conf.js',
-                port: 9999,
-                singleRun: true,
-                browsers: ['PhantomJS'],
-                logLevel: 'ERROR'
+                configFile: 'karma.conf.js'
             }
         }
     });
@@ -52,6 +45,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-concat');
 
     // Default task(s).
-    grunt.registerTask('default', ['jshint']);
+    grunt.registerTask('default', ['karma']);
 
 };
