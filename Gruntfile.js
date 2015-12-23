@@ -30,6 +30,15 @@ module.exports = function(grunt) {
             // which files the task should operate:
             all: ['Gruntfile.js', 'js/*.js'],
         },
+        bootlint: {
+            options: {
+                relaxerror: [],
+                showallerrors: false,
+                stoponerror: false,
+                stoponwarning: false
+            },
+            files: ['index.html']
+        },
         karma: {
             unit: {
                 configFile: 'karma.conf.js'
