@@ -11,13 +11,13 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
     // route for the about page
     .when('/androids', {
         templateUrl: 'templates/androids.html',
-        controller: 'myProjects'
+        controller: 'myAndroids'
     })
 
     // route for the contact page
     .when('/webs', {
         templateUrl: 'templates/webs.html',
-        controller: 'myProjects'
+        controller: 'myWebs'
     })
     .otherwise({
     	redirectTo: '/'
