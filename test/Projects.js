@@ -1,12 +1,13 @@
-describe('PhoneListCtrl', function(){
+describe('projects', function() {
 
-  beforeEach(module('projects'));
+    beforeEach(module('projects'));
 
-  it('should create "phones" model with 3 phones', inject(function($controller) {
-    var scope = {},
-        ctrl = $controller('myProjects', {$scope:scope});
-
-    expect(scope.test).toBe("");
-  }));
+    it('check synchronization', inject(function($controller) {
+        var scope = {},
+            ctrl = $controller('myProjects', {
+                $scope: scope
+            });
+        expect(scope.test).toBe("projects");
+    }));
 
 });
