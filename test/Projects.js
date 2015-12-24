@@ -1,5 +1,7 @@
-describe('example test', function() {
-    it('should be true', function() {
-        expect('foo').toBe('foo');
+describe('projects', function() {
+     beforeEach(module('projects'));
+
+    it("Check variables", function() {
+        expect(myjava).toEqual("javaNumber1");
     });
 });

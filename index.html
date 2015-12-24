@@ -1,14 +1,42 @@
 <!DOCTYPE html>
-<html ng-app="aornawat">
-<head>
-	 <meta name="description" content="Kijtapart Nawattranakul's Portfolio | UBC Student, developer, Vancouver, B.c.">
-	 <meta name="keywords" content="kijtapart,nawattranakul,ubc,portfolio,student,developer,java,web">
-	 <meta name="author" content="Kijtapart Nawattranakul">
-	 <title> aornawattranakul | Portfolio</title>
-</head>
-<body>
-<p> running ok </p>
+<html>
 
+<head>
+    <meta name="description" content="Kijtapart Nawattranakul's Portfolio | UBC Student, developer, Vancouver, B.c.">
+    <meta name="keywords" content="kijtapart,nawattranakul,ubc,portfolio,student,developer,java,web">
+    <meta name="author" content="Kijtapart Nawattranakul">
+    <title> aornawattranakul | Portfolio</title>
+</head>
+
+<body ng-app="aornawat">
+<div ng-controller="myProfile">
+	{{test}}
+</div>
+
+<div ng-controller="mySkills">
+	{{test}}
+</div>
+
+<div ng-controller="myProjects">
+	{{test}}
+</div>
+
+<div ng-controller="myContact">
+	{{test}}
+</div>
+
+<div ng-controller="myEducation">
+	{{test}}
+</div>
+
+	
+    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/projects.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="js/education.js"></script>
+    <script type="text/javascript" src="js/profile.js"></script>
+    <script type="text/javascript" src="js/skills.js"></script>
 </body>
 
 </html>
