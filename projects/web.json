@@ -1,0 +1,39 @@
+[
+  {
+    "name": "WHERES THE FOOD?",
+    "start": "Sep.2014",
+    "end": "Dec.2014",
+    "teamNumber": 4,
+    "description": "Let us help you find your favourite foodtruck.",
+    "skills": [
+      "javascript",
+      "HTML&CSS"
+    ],
+    "link": ""
+  },
+  {
+    "name": "CPSC314 Creative Image",
+    "start": "Jan.2015",
+    "end": "March.2015",
+    "teamNumber": 1,
+    "description": "Experimented with lighting, scene, image reflection, image rotation and different image mapping.",
+    "skills": [
+      "three.js",
+      "HTML&CSS"
+    ],
+    "link": "https://github.com/Paul-Kijtapart/CreativeImage"
+  },
+  {
+    "name": "CPSC304 Restaurant Management",
+    "start": "Feb.2015",
+    "end": "April.2015",
+    "teamNumber": 4,
+    "description": "This system helps a restaurant organize easily. Each position can access/modify database differently.",
+    "skills": [
+      "SQL",
+      "javascript",
+      "HTML&CSS"
+    ],
+    "link": ""
+  }
+]
