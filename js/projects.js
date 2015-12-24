@@ -1,13 +1,5 @@
-describe('projects', function() {
+angular.module('projects', [])
 
-    beforeEach(module('projects'));
-
-    it('check synchronization', inject(function($controller) {
-        var scope = {},
-            ctrl = $controller('myProjects', {
-                $scope: scope
-            });
-        expect(scope.test).toBe("projects");
-    }));
-
-});
+.controller('myProjects', ['$scope', function($scope) {
+    $scope.test = "projects";
+}]);
