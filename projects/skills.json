@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Web Development",
+    "skills": [
+      "HTML&CSS",
+      "Three.js",
+      "angularJS"
+    ]
+  },
+  {
+    "name": "Analytic Tools",
+    "skills": [
+      "matlab",
+      "R studio"
+    ]
+  },
+  {
+    "name": "Database",
+    "skills": [
+      "MySQL"
+    ]
+  }
+]

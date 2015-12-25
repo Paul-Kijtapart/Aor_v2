@@ -39,14 +39,23 @@
             </div>
         </div>
     </div>
-
-    <div ng-controller="mySkills" class="page-section" id="skillEducation">
+    <div class="page-section" id="skillEducation">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+
+                <div ng-controller="mySkills" class="col-md-6">
+                    <div ng-repeat="skill in skills" class="container-fluid">
+                    <h3> {{skill.name}}</h3>
+                    <p ng-repeat="s in skill.skills"> {{s}}</p>
+                    </div>
                 </div>
                 <div ng-controller="myEducation" class="col-md-6">
-                    {{test}}
+                    <h2> Education </h2>
+                    <h4> Faculty of Science - Computer Science </h3>
+                    <h4> Recent courses completed: </h3>
+                    <p ng-repeat="c in coursesCompleted">
+                        {{c}}
+                    </p>
                 </div>
             </div>
         </div>
