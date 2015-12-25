@@ -42,13 +42,13 @@
     <div class="page-section" id="skillEducation">
         <div class="container">
             <div class="row">
-                <div ng-controller="mySkills" class="col-md-6">
+                <div ng-controller="mySkills" class="col-md-5 aor-card" style="background-color:white;">
                     <div ng-repeat="skill in skills" class="container-fluid">
                         <h3><strong> {{skill.name}} </strong></h3>
                         <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="s in skill.skills"> {{s}}</span>
                     </div>
                 </div>
-                <div ng-controller="myEducation" class="col-md-6">
+                <div ng-controller="myEducation" class="col-md-5 col-md-offset-2 aor-card" style="background-color:white;">
                     <h2><strong> Education </strong></h2>
                     <h4><strong> Faculty of Science - Computer Science </strong></h3>
                     <h4><strong> Recent courses completed: </strong></h3>
@@ -69,7 +69,7 @@
         <div ng-view></div>
     </div>
     <div ng-controller="myContact" class="page-section" id="contact">
-        {{test}}
+        <h2><strong> CONTACT </strong></h2>
     </div>
 
     
