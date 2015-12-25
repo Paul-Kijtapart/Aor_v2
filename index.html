@@ -39,12 +39,15 @@
             </div>
         </div>
     </div>
-    <div ng-controller="mySkills" class="page-section" id="skills">
+
+    <div ng-controller="mySkills" class="page-section" id="skillEducation">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                 </div>
-                <div class="col-md-6"></div>
+                <div ng-controller="myEducation" class="col-md-6">
+                    {{test}}
+                </div>
             </div>
         </div>
     </div>
@@ -60,10 +63,9 @@
     <div ng-controller="myContact" class="page-section" id="contact">
         {{test}}
     </div>
-    <div ng-controller="myEducation" class="page-section" id="education">
-        {{test}}
-    </div>
+
     
+
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
