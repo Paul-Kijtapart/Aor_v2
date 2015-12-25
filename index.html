@@ -42,20 +42,19 @@
     <div class="page-section" id="skillEducation">
         <div class="container">
             <div class="row">
-
                 <div ng-controller="mySkills" class="col-md-6">
                     <div ng-repeat="skill in skills" class="container-fluid">
-                    <h3> {{skill.name}}</h3>
-                    <p ng-repeat="s in skill.skills"> {{s}}</p>
+                        <h3><strong> {{skill.name}} </strong></h3>
+                        <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="s in skill.skills"> {{s}}</span>
                     </div>
                 </div>
                 <div ng-controller="myEducation" class="col-md-6">
-                    <h2> Education </h2>
-                    <h4> Faculty of Science - Computer Science </h3>
-                    <h4> Recent courses completed: </h3>
-                    <p ng-repeat="c in coursesCompleted">
+                    <h2><strong> Education </strong></h2>
+                    <h4><strong> Faculty of Science - Computer Science </strong></h3>
+                    <h4><strong> Recent courses completed: </strong></h3>
+                    <p ng-repeat="c in coursesCompleted"><span class="label label-default" style="font-size:100%; display:inline-block">
                         {{c}}
-                    </p>
+                    </span></p>
                 </div>
             </div>
         </div>
