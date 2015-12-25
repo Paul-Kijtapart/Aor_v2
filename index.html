@@ -11,7 +11,7 @@
 </head>
 
 <body ng-app="aornawat">
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" style="margin-bottom: 0px;"role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
                 <span class="sr-only">Toggle navigation</span>
@@ -30,13 +30,13 @@
             </ul>
         </div>
     </nav>
-    <div ng-controller="myProfile">
+    <div ng-controller="myProfile" class="page-section" id="about">
         {{test}}
     </div>
-    <div ng-controller="mySkills">
+    <div ng-controller="mySkills" class="page-section" id="skills">
         {{test}}
     </div>
-    <div ng-controller="myProjects">
+    <div ng-controller="myProjects" class="page-section" id="projects">
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="#androids"><i class="fa fa-shield"></i> Android</a></li>
@@ -44,10 +44,10 @@
         </ul>
         <div ng-view></div>
     </div>
-    <div ng-controller="myContact">
+    <div ng-controller="myContact" class="page-section" id="contact">
         {{test}}
     </div>
-    <div ng-controller="myEducation">
+    <div ng-controller="myEducation" class="page-section" id="education">
         {{test}}
     </div>
     <script type="text/javascript" src="node_modules/angular/angular.js"></script>

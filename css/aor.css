@@ -1,0 +1,29 @@
+	.page-section {
+	    width: 100%;
+	    min-height: 500px;
+	    padding: 50px 0;
+	    border-bottom: 1px solid black;
+	    color: #000;
+	}
+	/*===================== Background Color ===============*/
+	
+	#about {
+	    background-color: #333;
+	}
+	
+	#skills {
+	    background-color: #696969;
+	}
+	
+	#projects {
+	    background-color: #D1D0CE;
+	}
+	
+	#education {
+	    background-color: #696969;
+	}
+	
+	#contact {
+	    background-color: #333;
+	}
+	
