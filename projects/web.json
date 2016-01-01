@@ -5,16 +5,18 @@
     "end": "Dec.2014",
     "teamNumber": 4,
     "description": "Let us help you find your favourite foodtruck.",
+    "responsibilities": [],
     "skills": [
       "javascript",
       "HTML&CSS"
     ],
+    "icon": "",
     "images": [
-      "image/WTFood.png",
-      "image/WTFood1.png",
-      "image/WTFood2.png",
-      "image/WTFood3.png",
-      "image/WTFoodstart.png"
+      "image/projects/WTFood.png",
+      "image/projects/WTFood1.png",
+      "image/projects/WTFood2.png",
+      "image/projects/WTFood3.png",
+      "image/projects/WTFoodstart.png"
     ],
     "link": ""
   },
@@ -24,10 +26,12 @@
     "end": "March.2015",
     "teamNumber": 1,
     "description": "Experimented with lighting, scene, image reflection, image rotation and different image mapping.",
+    "responsibilities": [],
     "skills": [
       "three.js",
       "HTML&CSS"
     ],
+    "icon": "",
     "images": [],
     "link": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
@@ -37,11 +41,13 @@
     "end": "April.2015",
     "teamNumber": 4,
     "description": "This system helps a restaurant organize easily. Each position can access/modify database differently.",
+    "responsibilities": [],
     "skills": [
       "SQL",
       "javascript",
       "HTML&CSS"
     ],
+    "icon": "",
     "images": [],
     "link": ""
   }

@@ -22,4 +22,4 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
     .otherwise({
     	redirectTo: '/'
     });
-}])
+}]);

@@ -5,15 +5,15 @@
     "end": "May.2015",
     "teamNumber": 5,
     "description": "Vibernate allows users to set multiple schedules for their phone to automatically switch between vibrate/silent and normal ringtone modes.",
+    "responsibilities": [],
     "skills": [
       "java"
     ],
+    "icon": "image/projects/vibernateIcon.png",
     "images": [
-      "image/vibernate1.png",
-      "image/vibernate2.png",
-      "image/vibernate3.png",
-      "image/vibernate4.png",
-      "image/vibernateIcon.png"
+      "image/projects/vibernate1.png",
+      "image/projects/vibernate2.png",
+      "image/projects/vibernate3.png"
     ],
     "link": "https://play.google.com/store/apps/details?id=com.napontaratan.vibernate"
   },
@@ -23,16 +23,17 @@
     "end": "Dec.2015",
     "teamNumber": 4,
     "description": "An alarm application which makes it near impossible to go back to sleep. You are forced to complete tasks such as: math questions, history questions, and a snake game. The alarm will not turn off until you complete the tasks, turn off the phone or delete the app.",
+    "responsibilities": [],
     "skills": [
       "angularJS",
       "HTML&CSS",
       "karma-jasmine"
     ],
+    "icon": "image/projects/alarmIcon.png",
     "images": [
-      "image/alarm1.png",
-      "image/alarm2.png",
-      "image/alarm3.png",
-      "image/alarmIcon.png"
+      "image/projects/alarm1.jpg",
+      "image/projects/alarm2.jpg",
+      "image/projects/alarm3.jpg"
     ],
     "link": "http://www.amazon.com/dp/B018WMKJK8/ref=cm_sw_su_dp"
   }

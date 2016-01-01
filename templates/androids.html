@@ -1,4 +1,29 @@
 <div class="container aor-card" id="android">
-    <h1>Android</h1>
-    <p>{{ messageA }}</p>
+    <div class="row">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 style="text-align: center;"><strong> PHONE </strong></h2></div>
+            <div class="col-md-6">
+                <div ng-repeat="obj in androids" class="btn btn-default project-option" ng-click="changeProject(obj.name)">
+                    {{obj.name}} <img ng-src="{{obj.icon}}">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img ng-src="{{dispAndroid}}" class="mainDisp">
+        </div>
+        <div class="col-md-6" style="position:relative;">
+            <div class="row">
+                <dl>
+                    <dt> DESCRIPTION </dt>
+                    <dd> {{androids[currIndex].description}}</dd>
+                    <dt> RESPONSIBILITIES </dt>
+                    <dd> </dd>
+                </dl>
+                <div ng-repeat="img in androids[currIndex].images" class="smallDisp">
+                    <img ng-src="{{img}}" ng-click="setImage(img)">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
