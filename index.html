@@ -42,13 +42,13 @@
     <div class="page-section" id="skillEducation">
         <div class="container">
             <div class="row">
-                <div ng-controller="mySkills" class="col-md-5 aor-card" style="background-color:white;">
+                <div ng-controller="mySkills" class="col-md-5 aor-card">
                     <div ng-repeat="skill in skills" class="container-fluid">
                         <h3><strong> {{skill.name}} </strong></h3>
                         <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="s in skill.skills"> {{s}}</span>
                     </div>
                 </div>
-                <div ng-controller="myEducation" class="col-md-5 col-md-offset-2 aor-card" style="background-color:white;">
+                <div ng-controller="myEducation" class="col-md-5 col-md-offset-2 aor-card">
                     <h2><strong> Education </strong></h2>
                     <h4><strong> Faculty of Science - Computer Science </strong></h3>
                     <h4><strong> Recent courses completed: </strong></h3>
@@ -61,7 +61,7 @@
     </div>
 
     <div ng-controller="myProjects" class="page-section" id="projects">
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav">
             <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="#androids"><i class="fa fa-shield"></i> Android</a></li>
             <li><a href="#webs"><i class="fa fa-comment"></i> Web</a></li>
@@ -69,13 +69,31 @@
         <div ng-view></div>
     </div>
     <div ng-controller="myContact" class="page-section" id="contact">
-        <h2><strong> CONTACT </strong></h2>
+    <div class="container aor-card">
+        <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+            <h2><strong> CONTACT </strong></h2>
+            <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+                <input type="text" name="name" ng-model="name" class="form-control input" placeholder="Name" ng-class="{'has-error':userForm.name.$invalid && !userForm.name.$pristine}" required>
+               <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
+            </div>
+            <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
+                <input type="email" name="email" ng-model="email" class="form-control"  placeholder="Email Address" required>
+                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
+            </div>
+            <div class="form-group">
+                <input type="number" name="phone" ng-model="phone" class="form-control" placeholder="Phone Number">
+            </div>
+            <div class="form-group">
+                 <textarea class="form-control" name="message" ng-model="message" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
     </div>
 
-    
-
-    <script type="text/javascript" src="node_modules/angular/angular.js"></script>
-    <script type="text/javascript" src="node_modules/angular-route/angular-route.js"></script>
+    <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="node_modules/angular-animate/angular-animate.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/projects.js"></script>
     <script type="text/javascript" src="js/contact.js"></script>

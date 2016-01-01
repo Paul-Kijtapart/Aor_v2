@@ -1,7 +1,15 @@
 angular.module('projects', [])
 
-.controller('myProjects', ['$scope', '$http', function($scope, $http) {
+.controller('myProjects', ['$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+    $http.get('projects/android.json').success(function(data) {
+        $scope.androids = data;
+    });
+    $http.get('projects/web.json').success(function(data) {
+        $scope.webs = data; 
+    });
+
     
+
     $scope.messageH = "home";
     $scope.test = "projects";
 }])
@@ -10,6 +18,7 @@ angular.module('projects', [])
     $http.get('projects/android.json').success(function(data) {
         $scope.androids = data;
     });
+
     $scope.messageA = "androidss";
 }])
 
@@ -18,4 +27,4 @@ angular.module('projects', [])
         $scope.webs = data;
     });
     $scope.messageW = "webs";
-}])
+}]);

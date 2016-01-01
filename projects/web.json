@@ -9,6 +9,13 @@
       "javascript",
       "HTML&CSS"
     ],
+    "images": [
+      "image/WTFood.png",
+      "image/WTFood1.png",
+      "image/WTFood2.png",
+      "image/WTFood3.png",
+      "image/WTFoodstart.png"
+    ],
     "link": ""
   },
   {
@@ -21,6 +28,7 @@
       "three.js",
       "HTML&CSS"
     ],
+    "images": [],
     "link": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
   {
@@ -34,6 +42,7 @@
       "javascript",
       "HTML&CSS"
     ],
+    "images": [],
     "link": ""
   }
 ]
