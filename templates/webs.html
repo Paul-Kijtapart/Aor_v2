@@ -2,26 +2,38 @@
     <nav style="background-color: white;" class="nav navbar-default">
         <div class="container-fluid">
             <ul class="nav navbar-nav navbar-right">
-                <li ng-repeat="obj in webs" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)"><span>{{obj.name}} <img ng-src="{{obj.icon}}"></span> </li>
+                <li ng-repeat="obj in webs" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)"><span>{{obj.name}}</span> </li>
             </ul>
         </div>
     </nav>
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <p class="lead" style="display: inline-block;"><strong>DESCRIPTION</strong></p>
-                <p style="display: inline-block;"> {{webs[currIndex].description}} </p>
-                <p style="display: inline-block;" class="lead"><strong>RESPONSIBILITIES</strong></p>
-                <ul style="display: inline-block;">
-                    <li ng-repeat="res in webs[currIndex].responsibilities">{{res}} </li>
-                </ul>
+                <div style="display: block;">
+                    <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="tool in webs[currIndex].skills">{{tool}} </span>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">DURATION</p>
+                    <p style="display: inline-block;"><strong> {{webs[currIndex].start}} to {{webs[currIndex].end}}</strong></p>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">DESCRIPTION</p>
+                    <p style="display: inline-block;"><strong> {{webs[currIndex].description}} </strong></p>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">RESPONSIBILITIES</p>
+                    <ul style="display: inline-block;">
+                        <li ng-repeat="res in webs[currIndex].responsibilities"><strong>{{res}}</strong></li>
+                    </ul>
+                </div>
                 <ul class="list-inline">
-                    <li><a href="{{ webs[currIndex].link }}" class="btn-social-dark btn-outline-dark" target="_blank"><span class="glyphicon glyphicon-user" ></span></a></li>
+                    <li><a href="{{ webs[currIndex].github }}" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+                    <li><a href="{{ webs[currIndex].link }}" target="_blank"><i class="fa fa-fw fa-external-link-square"></i></a></li>
                 </ul>
             </div>
             <div class="col-md-6">
                 <div ng-repeat="img in webs[currIndex].images" class="smallDisp">
-                    <img ng-src="{{img}}" ng-click="setImage(img)">
+                    <img ng-src="{{img}}" ng-click="setImage(img, $index)">
                 </div>
             </div>
         </div>

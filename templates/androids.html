@@ -12,14 +12,29 @@
         </div>
         <div class="col-md-6" style="position:relative;">
             <div class="row">
-                <p class="lead"><strong>DESCRIPTION</strong></p>
-                <p> {{androids[currIndex].description}} </p>
-                <p class="lead"><strong>RESPONSIBILITIES</strong></p>
-                <ul>
-                    <li ng-repeat="res in androids[currIndex].responsibilities">{{res}} </li>
+                <div style="display: block;">
+                    <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="tool in androids[currIndex].skills">{{tool}} </span>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">DURATION</p>
+                    <p style="display: inline-block;"><strong> {{androids[currIndex].start}} to {{androids[currIndex].end}}</strong></p>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">DESCRIPTION</p>
+                    <p style="display: inline-block;"><strong> {{androids[currIndex].description}} </strong></p>
+                </div>
+                <div style="display: block;">
+                    <p style="display: inline-block;">RESPONSIBILITIES</p>
+                    <ul style="display: inline-block;">
+                        <li ng-repeat="res in androids[currIndex].responsibilities"><strong>{{res}}</strong></li>
+                    </ul>
+                </div>
+                <ul class="list-inline">
+                    <li><a href="{{ androids[currIndex].github }}" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
+                    <li><a href="{{ androids[currIndex].link }}" target="_blank"><i class="fa fa-fw fa-external-link-square"></i></a></li>
                 </ul>
                 <div ng-repeat="img in androids[currIndex].images" class="smallDisp">
-                    <img ng-src="{{img}}" ng-click="setImage(img,$index)">
+                    <img ng-src="{{img}}" ng-click="setImage(img, $index)">
                 </div>
             </div>
         </div>

@@ -1,27 +1,5 @@
 [
   {
-    "name": "Vibernate 2",
-    "start": "March.2015",
-    "end": "May.2015",
-    "teamNumber": 5,
-    "description": "Vibernate allows users to set multiple schedules for their phone to automatically switch between vibrate/silent and normal ringtone modes.",
-    "responsibilities": [
-      "Implemented the listView page using RecyclerView; verified the functionality of each click event.",
-      "Integrated animation on addition, deletion, and scrolling.",
-      "Synchronized the listView and weekView."
-    ],
-    "skills": [
-      "java"
-    ],
-    "icon": "image/projects/vibernateIcon.png",
-    "images": [
-      "image/projects/vibernate1.png",
-      "image/projects/vibernate3.png",
-      "image/projects/vibernate2.png"
-    ],
-    "link": "https://play.google.com/store/apps/details?id=com.napontaratan.vibernate"
-  },
-  {
     "name": "Alarm+",
     "start": "Sep.2015",
     "end": "Dec.2015",
@@ -45,5 +23,27 @@
       "image/projects/alarm3.jpg"
     ],
     "link": "http://www.amazon.com/dp/B018WMKJK8/ref=cm_sw_su_dp"
+  },
+  {
+    "name": "Vibernate 2",
+    "start": "March.2015",
+    "end": "May.2015",
+    "teamNumber": 5,
+    "description": "Vibernate allows users to set multiple schedules for their phone to automatically switch between vibrate/silent and normal ringtone modes.",
+    "responsibilities": [
+      "Implemented the listView page using RecyclerView; verified the functionality of each click event.",
+      "Integrated animation on addition, deletion, and scrolling.",
+      "Synchronized the listView and weekView."
+    ],
+    "skills": [
+      "java"
+    ],
+    "icon": "image/projects/vibernateIcon.png",
+    "images": [
+      "image/projects/vibernate1.png",
+      "image/projects/vibernate3.png",
+      "image/projects/vibernate2.png"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.napontaratan.vibernate"
   }
 ]

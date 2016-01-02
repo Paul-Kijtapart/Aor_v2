@@ -13,7 +13,8 @@
     ],
     "skills": [
       "javascript",
-      "HTML&CSS"
+      "HTML",
+      "CSS"
     ],
     "icon": "image/projects/WTFicon.ico",
     "images": [
@@ -24,7 +25,8 @@
       "image/projects/WTFood4.png",
       "image/projects/WTFood5.png"
     ],
-    "link": "https://github.com/UBC-CS310-2014w1/WheresTheFood"
+    "github": "https://github.com/UBC-CS310-2014w1/WheresTheFood",
+    "link": "https://vivid-torch-5902.firebaseapp.com/"
   },
   {
     "name": "Creative Image",
@@ -37,7 +39,8 @@
     ],
     "skills": [
       "three.js",
-      "HTML&CSS"
+      "HTML",
+      "CSS"
     ],
     "icon": "",
     "images": [
@@ -46,7 +49,8 @@
       "image/projects/creative3.png",
       "image/projects/creative4.png"
     ],
-    "link": "https://github.com/Paul-Kijtapart/CreativeImage"
+    "link": "",
+    "github": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
   {
     "name": "Restaurant Management",
@@ -61,10 +65,12 @@
     "skills": [
       "SQL",
       "javascript",
-      "HTML&CSS"
+      "HTML",
+      "CSS"
     ],
     "icon": "",
     "images": [],
-    "link": ""
+    "link": "",
+    "github": "https://github.com/dan-l/304"
   }
 ]

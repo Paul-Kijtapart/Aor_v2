@@ -39,10 +39,10 @@ angular.module('projects', [])
 
     $scope.changeProject = function(name, index) {
         if (name === "Vibernate 2") {
-            $scope.currIndex = 0;
+            $scope.currIndex = 1;
             $scope.dispAndroid = $scope.androids[$scope.currIndex].images[0];
         } else {
-            $scope.currIndex = 1;
+            $scope.currIndex = 0;
             $scope.dispAndroid = $scope.androids[$scope.currIndex].images[0];
         }
 
