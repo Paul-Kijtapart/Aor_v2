@@ -5,15 +5,19 @@
     "end": "May.2015",
     "teamNumber": 5,
     "description": "Vibernate allows users to set multiple schedules for their phone to automatically switch between vibrate/silent and normal ringtone modes.",
-    "responsibilities": [],
+    "responsibilities": [
+      "Implemented the listView page using RecyclerView; verified the functionality of each click event.",
+      "Integrated animation on addition, deletion, and scrolling.",
+      "Synchronized the listView and weekView."
+    ],
     "skills": [
       "java"
     ],
     "icon": "image/projects/vibernateIcon.png",
     "images": [
       "image/projects/vibernate1.png",
-      "image/projects/vibernate2.png",
-      "image/projects/vibernate3.png"
+      "image/projects/vibernate3.png",
+      "image/projects/vibernate2.png"
     ],
     "link": "https://play.google.com/store/apps/details?id=com.napontaratan.vibernate"
   },
@@ -23,7 +27,12 @@
     "end": "Dec.2015",
     "teamNumber": 4,
     "description": "An alarm application which makes it near impossible to go back to sleep. You are forced to complete tasks such as: math questions, history questions, and a snake game. The alarm will not turn off until you complete the tasks, turn off the phone or delete the app.",
-    "responsibilities": [],
+    "responsibilities": [
+      "Setup project with angularJS and ionicframework; Designed UI for the Home and Setup page.",
+      "Integrated and modified localNotification plugin to use a native android alarm; assigned unique ID to each alarm; used localStorage to store alarms.",
+      "Implemented Facebook Integration to allow users to login, logout, and share their successes after completing a task.",
+      "Setup karma-jasmine unit testing; contributed to establish test automation with travis-CI."
+    ],
     "skills": [
       "angularJS",
       "HTML&CSS",

@@ -5,7 +5,12 @@
     "end": "Dec.2014",
     "teamNumber": 4,
     "description": "Let us help you find your favourite foodtruck.",
-    "responsibilities": [],
+    "responsibilities": [
+      "Implemented the functionality of Memo using firebase API.",
+      "Used Google API to retrieve the operation hours of a given food truck’s name.",
+      "Used Instagram API to display photos according to a given tag name.",
+      "Used Agile software development approach."
+    ],
     "skills": [
       "javascript",
       "HTML&CSS"
@@ -21,12 +26,14 @@
     "link": ""
   },
   {
-    "name": "CPSC314 Creative Image",
+    "name": "Creative Image",
     "start": "Jan.2015",
     "end": "March.2015",
     "teamNumber": 1,
     "description": "Experimented with lighting, scene, image reflection, image rotation and different image mapping.",
-    "responsibilities": [],
+    "responsibilities": [
+    ""
+    ],
     "skills": [
       "three.js",
       "HTML&CSS"
@@ -36,12 +43,15 @@
     "link": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
   {
-    "name": "CPSC304 Restaurant Management",
+    "name": "Restaurant Management",
     "start": "Feb.2015",
     "end": "April.2015",
     "teamNumber": 4,
     "description": "This system helps a restaurant organize easily. Each position can access/modify database differently.",
-    "responsibilities": [],
+    "responsibilities": [
+      "Designed a page for staff and foodItem using HTML and CSS; co-wrote an E/R diagram; normalized each table to be in 3NF or BCNF; co-wrote SQL DDL to create all the tables in SQL.",
+      "Implemented the Staff page using MySQL and PHP."
+    ],
     "skills": [
       "SQL",
       "javascript",

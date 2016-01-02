@@ -27,10 +27,10 @@
 	}
 	
 	.mainDisp {
-	    max-width: 80%;
-	    max-height: 80%;
-	    max-height: 789.722;
 	    border: 1px solid black;
+	    margin: auto;
+	    width: 60%;
+	    padding: 10px;
 	}
 	
 	.smallDisp {
@@ -47,7 +47,7 @@
 	
 	.smallDisp img:hover {
 	    cursor: pointer;
-	    background-color: #5bc0de;
+	    background-color: #ccc;
 	    border-color: #46b8da;
 	    -moz-box-shadow: -5px 3px 4px rgba(0, 0, 0, 0.4);
 	    z-index: 1;
@@ -60,13 +60,21 @@
 	}
 	
 	.project-option img {
-	    height: 80px;
-	    width: 80px;
+	    max-height: 80px;
+	    max-width: 80px;
 	    padding: 1em;
 	}
 	
 	.project-option img:hover {
 	    cursor: pointer;
+	}
+	
+	.isActive {
+	    background-color: #4CAF50;
+	}
+
+	.imgActive {
+		background-color: #4CAF50;
 	}
 	/*===================== Background Color ===============*/
 	
@@ -81,11 +89,11 @@
 	#home {}
 	
 	#android {
-	    min-height: 897.208px;
+	    /*min-height: 897.208px;*/
 	}
 	
 	#webs {
-	    min-height: 897.208px;
+	   /* min-height: 897.208px;*/
 	}
 	/*===================== Contact ===============*/
 	

@@ -25,6 +25,7 @@ angular.module('projects', [])
 
 .controller('myAndroids', ['$scope', '$http', function($scope, $http) {
     $scope.currIndex = 0;
+    $scope.selected = 0;
 
     $http.get('projects/android.json').success(function(data) {
         $scope.androids = data;
@@ -32,11 +33,11 @@ angular.module('projects', [])
         $scope.dispIcon = data[$scope.currIndex].icon;
     });
 
-    $scope.setImage = function(imageUrl) {
+    $scope.setImage = function(imageUrl, index) {
         $scope.dispAndroid = imageUrl;
     };
 
-    $scope.changeProject = function(name) {
+    $scope.changeProject = function(name, index) {
         if (name === "Vibernate 2") {
             $scope.currIndex = 0;
             $scope.dispAndroid = $scope.androids[$scope.currIndex].images[0];
@@ -44,6 +45,8 @@ angular.module('projects', [])
             $scope.currIndex = 1;
             $scope.dispAndroid = $scope.androids[$scope.currIndex].images[0];
         }
+
+        $scope.selected = index;
     };
 
     $scope.messageA = "androidss";
@@ -51,6 +54,7 @@ angular.module('projects', [])
 
 .controller('myWebs', ['$scope', '$http', function($scope, $http) {
     $scope.currIndex = 0;
+    $scope.selected = 0;
 
     $http.get('projects/web.json').success(function(data) {
         $scope.webs = data;
@@ -58,10 +62,24 @@ angular.module('projects', [])
         $scope.dispIcon = data[$scope.currIndex].icon;
     });
 
-    $scope.setImage = function(imageUrl) {
+    $scope.setImage = function(imageUrl, index) {
         $scope.dispWeb = imageUrl;
     };
 
+    $scope.changeProject = function(name, index) {
+        if (name === "Restaurant Management") {
+            $scope.currIndex = 2;
+            $scope.dispWeb = $scope.webs[$scope.currIndex].images[0];
+        } else if (name === "Creative Image") {
+            $scope.currIndex = 1;
+            $scope.dispWeb = $scope.webs[$scope.currIndex].images[0];
+        } else {
+            $scope.currIndex = 0;
+            $scope.dispWeb = $scope.webs[$scope.currIndex].images[0];
+        }
+
+        $scope.selected = index;
+    };
 
     $scope.messageW = "webs";
 }]);
