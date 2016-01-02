@@ -15,15 +15,16 @@
       "javascript",
       "HTML&CSS"
     ],
-    "icon": "",
+    "icon": "image/projects/WTFicon.ico",
     "images": [
       "image/projects/WTFood.png",
       "image/projects/WTFood1.png",
       "image/projects/WTFood2.png",
       "image/projects/WTFood3.png",
-      "image/projects/WTFoodstart.png"
+      "image/projects/WTFood4.png",
+      "image/projects/WTFood5.png"
     ],
-    "link": ""
+    "link": "https://github.com/UBC-CS310-2014w1/WheresTheFood"
   },
   {
     "name": "Creative Image",
@@ -32,14 +33,19 @@
     "teamNumber": 1,
     "description": "Experimented with lighting, scene, image reflection, image rotation and different image mapping.",
     "responsibilities": [
-    ""
+      ""
     ],
     "skills": [
       "three.js",
       "HTML&CSS"
     ],
     "icon": "",
-    "images": [],
+    "images": [
+      "image/projects/creative1.png",
+      "image/projects/creative2.png",
+      "image/projects/creative3.png",
+      "image/projects/creative4.png"
+    ],
     "link": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
   {

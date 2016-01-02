@@ -15,6 +15,9 @@
                 <ul style="display: inline-block;">
                     <li ng-repeat="res in webs[currIndex].responsibilities">{{res}} </li>
                 </ul>
+                <ul class="list-inline">
+                    <li><a href="{{ webs[currIndex].link }}" class="btn-social-dark btn-outline-dark" target="_blank"><span class="glyphicon glyphicon-user" ></span></a></li>
+                </ul>
             </div>
             <div class="col-md-6">
                 <div ng-repeat="img in webs[currIndex].images" class="smallDisp">
