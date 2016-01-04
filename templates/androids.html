@@ -30,8 +30,8 @@
                     </ul>
                 </div>
                 <ul class="list-inline">
-                    <li><a href="{{ androids[currIndex].github }}" target="_blank"><i class="fa fa-fw fa-github"></i></a></li>
-                    <li><a href="{{ androids[currIndex].link }}" target="_blank"><i class="fa fa-fw fa-external-link-square"></i></a></li>
+                    <li><a href="{{ androids[currIndex].github }}" target="_blank"><i class="fa fa-github linkIcon fa-2x"></i></a></li>
+                    <li><a href="{{ androids[currIndex].link }}" target="_blank"><i class="fa fa-external-link-square linkIcon fa-2x"></i></a></li>
                 </ul>
                 <div ng-repeat="img in androids[currIndex].images" class="smallDisp">
                     <img ng-src="{{img}}" ng-click="setImage(img, $index)">
