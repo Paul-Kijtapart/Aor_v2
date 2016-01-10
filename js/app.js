@@ -1,4 +1,19 @@
-angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'projects', 'skills'])
+angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'projects', 'skills', 'duScroll'])
+
+.controller('mainCtrl', ['$scope', '$document',
+    function($scope, $document) {
+        $scope.toTheTop = function() {
+            $document.scrollTopAnimated(0, 5000).then(function() {
+                // DO something cool
+            });
+        }
+        var section3 = angular.element(document.getElementById('section-3'));
+        $scope.toSection3 = function() {
+            $document.scrollToElementAnimated(section3);
+        }
+    }
+])
+
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider
@@ -16,10 +31,10 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
 
     // route for the contact page
     .when('/webs', {
-        templateUrl: 'templates/webs.html',
-        controller: 'myWebs'
-    })
-    .otherwise({
-    	redirectTo: '/'
-    });
+            templateUrl: 'templates/webs.html',
+            controller: 'myWebs'
+        })
+        .otherwise({
+            redirectTo: '/'
+        });
 }]);
