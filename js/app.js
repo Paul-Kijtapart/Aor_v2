@@ -14,6 +14,8 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
     }
 ])
 
+.value('duScrollBottomSpy', true)
+
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider

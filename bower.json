@@ -1,0 +1,17 @@
+{
+  "name": "aornawattranakul.com",
+  "description": "PersonalWebsite",
+  "main": "",
+  "license": "MIT",
+  "homepage": "https://github.com/Paul-Kijtapart/Aor_v2",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+  }
+}
