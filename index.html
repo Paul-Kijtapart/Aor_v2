@@ -24,7 +24,7 @@
         <div id="main-nav" class="navbar-collapse collapse">
             <ul du-spy-context class="nav navbar-nav navbar-right">
                 <li du-scrollspy="about"><a href="#about" du-smooth-scroll><span class="glyphicon glyphicon-user" ></span> ABOUT ME </a></li>
-                <li du-scrollspy="skillEducation"><a href="#skillEducation"  du-smooth-scroll><span class="glyphicon glyphicon-book" ></span> SKILLS </a></li>
+                <li du-scrollspy="skillEducation"><a href="#skillEducation" du-smooth-scroll><span class="glyphicon glyphicon-book" ></span> SKILLS </a></li>
                 <li du-scrollspy="projects"><a href="#projects" du-smooth-scroll><span class="glyphicon glyphicon-list" ></span> PROJECTS</a></li>
                 <li du-scrollspy="contact"><a href="#contact" du-smooth-scroll><span class="glyphicon glyphicon-envelope"></span> CONTACT </a></li>
             </ul>
@@ -33,9 +33,23 @@
     <div ng-controller="myProfile" class="page-section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-md-7"></div>
-            </div>
-            <div class="col-md-5">
+                <div class="col-md-5 aor-card">
+                    <h4 class="question"> Why did you take CPSC as your major? </h4>
+                    <p><strong>  </strong> </p>
+                </div>
+                <div class="col-md-5 col-md-offset-2 aor-card">
+                    <!-- <div class="container-fluid"> -->
+                    <img class="img-rounded center-block" src="image/E-portfolio-small.jpg" alt="E-portfolio pic" style="padding-top:1%; max-width: 80%; max-height:80%;">
+                    <hr style="border-color:black;">
+                    <div>
+                        <h4><span style="color:#000;"> YEAR: </span><strong> 4</strong></h4>
+                        <h4><span style="color:#000;"> MAJOR: </span><strong>   COMPUTER SCIENCE </strong></h4>
+                        <h4><span style="color:#000;"> SCHOOL: </span><strong> UBC </strong></h4>
+                        <h4><span style="color:#000;"> LOCATION: </span><strong> VANCOUVER, B.C </strong></h4>
+                    </div>
+                    <hr style="border-color:black;">
+                    <!-- </div> -->
+                </div>
             </div>
         </div>
     </div>
@@ -43,13 +57,23 @@
         <div class="container">
             <div class="row">
                 <div ng-controller="mySkills" class="col-md-5 aor-card">
+                    <h3><i class="fa fa-code"> </i><strong> SKILLS </strong></h3>
                     <div ng-repeat="skill in skills" class="container-fluid">
-                        <h3><strong> {{skill.name}} </strong></h3>
-                        <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="s in skill.skills"> {{s}}</span>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="col-md-11">
+                                <h4><strong> {{skill.name}} </strong></h4>
+                                <span class="label label-default" style="font: 100% arial, sans-serif; margin-right:5px; display:inline-block" ng-repeat="s in skill.skills"> {{s}}</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div ng-controller="myEducation" class="col-md-5 col-md-offset-2 aor-card">
-                    <h2><strong> Education </strong></h2>
+                    <h3><i class="fa fa-mortar-board"> </i><strong> EDUCATION </strong></h3>
                     <h4><strong> Faculty of Science - Computer Science </strong></h3>
                     <h4><strong> Recent courses completed: </strong></h3>
                     <p ng-repeat="c in coursesCompleted"><span class="label label-default" style="font-size:100%; display:inline-block">
@@ -59,15 +83,16 @@
             </div>
         </div>
     </div>
-
+    <!-- PROJECTS -->
     <div ng-controller="myProjects" class="page-section" id="projects">
-        <!-- <ul class="nav navbar-nav">
+       <!--  <ul>
             <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
             <li><a href="#androids"><i class="fa fa-shield"></i> Android</a></li>
             <li><a href="#webs"><i class="fa fa-comment"></i> Web</a></li>
         </ul> -->
         <div ng-view></div>
     </div>
+    <!-- CONTACT -->
     <div ng-controller="myContact" class="page-section" id="contact">
     <div class="container aor-card">
         <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
@@ -89,9 +114,10 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-    <footer>
-        <button class="btn"ng-click="toTheTop()">Take me back!</button> 
-    </footer>
+    </div>
+    
+    <div class="containter myFooter">
+        
     </div>
 
     <script type="text/javascript" src="node_modules/angular/angular.min.js"></script>

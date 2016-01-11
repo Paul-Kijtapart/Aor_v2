@@ -35,7 +35,11 @@
     "teamNumber": 1,
     "description": "Experimented with lighting, scene, image reflection, image rotation and different image mapping.",
     "responsibilities": [
-      ""
+      "Setup scene, renderer, and camera.",
+      "Loaded different objects into the scene; implemented texture mapping to the scene and each object.",
+      "Implemented object movement and rotation by using matrix addition and multiplication respectively.",
+      "Experimented with Phong shading, and Gouraud shading; experimented with spotlight",
+      "Implemented keyboard interaction to control an object."
     ],
     "skills": [
       "three.js",

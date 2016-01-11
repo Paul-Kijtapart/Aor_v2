@@ -6,16 +6,15 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
             $document.scrollTopAnimated(0, 5000).then(function() {
                 // DO something cool
             });
-        }
+        };
         var section3 = angular.element(document.getElementById('section-3'));
         $scope.toSection3 = function() {
             $document.scrollToElementAnimated(section3);
-        }
+        };
     }
 ])
 
 .value('duScrollBottomSpy', true)
-
 
 .config(['$routeProvider', function($routeProvider) {
     $routeProvider
