@@ -1,7 +1,7 @@
 <div class="container aor-card" id="android">
     <div class="container-fluid project-present">
         <div class="row">
-            <div class="col-md-4" ng-repeat="obj in androids" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)"><span>{{obj.name}} <img class="img-rounded center-block" ng-src="{{obj.icon}}" style="padding:1% 0% 10% 0%; max-width: 20%; max-height: 20%; cursor: pointer;"></span> </div>
+            <div class="col-md-4" ng-repeat="obj in androids" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)"><span>{{obj.name}} <img class="img-rounded center-block img-responsive" ng-src="{{obj.icon}}" style="padding:1% 0% 10% 0%;  max-height: 20%; max-width: 20%; cursor: pointer;"></span> </div>
         </div>
     </div>
     <div class="row">
