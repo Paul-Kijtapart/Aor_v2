@@ -23,6 +23,7 @@ angular.module('projects', [])
     $scope.test = "projects";
 }])
 
+// ANDROID Projects
 .controller('myAndroids', ['$scope', '$http', function($scope, $http) {
     $scope.currIndex = 0;
     $scope.selected = 0;
@@ -52,6 +53,7 @@ angular.module('projects', [])
     $scope.messageA = "androidss";
 }])
 
+// WEB Projects
 .controller('myWebs', ['$scope', '$http', function($scope, $http) {
     $scope.currIndex = 0;
     $scope.selected = 0;

@@ -36,6 +36,7 @@
 	}
 	
 	.aor-card {
+		width: inherit;
 		background-color: white;
 		padding-top: 5px;
 		padding-bottom: 8px;
@@ -91,6 +92,14 @@
 	.project-option img:hover {
 		cursor: pointer;
 	}
+
+	.project-present {
+		padding: 1% 0px 1% 0px;
+		text-align: center;
+		background-color: white;
+	}
+
+
 	
 	.isActive {
 		background-color: #00AC7F;
@@ -142,7 +151,8 @@
 	
 	#education {}
 	
-	#home {}
+	#home {
+	}
 	
 	#android {
 		/*min-height: 897.208px;*/

@@ -1,9 +1,7 @@
 <div class="container aor-card" id="webs">
-    <div style="background-color: white;" >
-        <div class="container-fluid">
-            <ul >
-                <li ng-repeat="obj in webs" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)"><span>{{obj.name}}</span> </li>
-            </ul>
+    <div class="container-fluid project-present">
+        <div class="row">
+            <div class="col-md-4" ng-repeat="obj in webs" ng-class="{isActive: $index == selected }" class="btn btn-default project-option" ng-click="changeProject(obj.name, $index)" style="cursor: pointer;"><span>{{obj.name}}</span> </div>
         </div>
     </div>
     <div class="container">
