@@ -20,8 +20,9 @@ angular.module('aornawat', ['ngRoute', 'contact', 'education', 'profile', 'proje
     $routeProvider
     // route for the home page
         .when('/', {
-        templateUrl: 'templates/home.html',
-        controller: 'myProjects'
+        templateUrl: 'templates/webs.html',
+        // controller: 'myProjects'
+        controller: 'myWebs'
     })
 
     // route for the about page
