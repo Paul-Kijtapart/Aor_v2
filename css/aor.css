@@ -44,6 +44,18 @@
 	        margin-top: 100%;
 	    }
 	}
+
+	/*@media (min-width: 992px) {
+		.img-responsive {
+
+		}
+	}
+
+	@media (min-width: 768px) {
+		.img-responsive {
+			
+		}
+	}*/
 	
 	.myFooter {
 	    min-height: 100px;

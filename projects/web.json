@@ -57,17 +57,18 @@
     "github": "https://github.com/Paul-Kijtapart/CreativeImage"
   },
   {
-    "name": "Restaurant Management",
-    "start": "Feb.2015",
-    "end": "April.2015",
+    "name": "GoTron",
+    "start": "Jan.2016",
+    "end": "April.2016",
     "teamNumber": 4,
-    "description": "This system helps a restaurant organize easily. Each position can access/modify database differently.",
+    "description": "Tron game implemented in GoLang using Peer-to-Peer model.",
     "responsibilities": [
-      "Designed a page for staff and foodItem using HTML and CSS; co-wrote an E/R diagram; normalized each table to be in 3NF or BCNF; co-wrote SQL DDL to create all the tables in SQL.",
-      "Implemented the Staff page using MySQL and PHP."
+      "Implemented a MatchMaking server responsible for creating a game room. ",
+      "Implemented node failure.",
+      "Contributed to implementing consistency mechanic in the game."
     ],
     "skills": [
-      "SQL",
+      "GoTron",
       "javascript",
       "HTML",
       "CSS"
@@ -75,6 +76,6 @@
     "icon": "",
     "images": [],
     "link": "",
-    "github": "https://github.com/dan-l/304"
+    "github": "https://github.com/napon/GoTron"
   }
 ]

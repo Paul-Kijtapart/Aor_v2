@@ -69,7 +69,7 @@ angular.module('projects', [])
     };
 
     $scope.changeProject = function(name, index) {
-        if (name === "Restaurant Management") {
+        if (name === "GoTron") {
             $scope.currIndex = 2;
             $scope.dispWeb = $scope.webs[$scope.currIndex].images[0];
         } else if (name === "Creative Image") {
