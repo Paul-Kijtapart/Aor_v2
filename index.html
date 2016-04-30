@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div> -->
-                <div class="page-section" id="skillEducation">
+                <div class="page-section first-section" id="skillEducation">
                     <div class="container">
                         <div class="row">
                             <div ng-controller="mySkills" class="col-md-5 aor-card">
@@ -100,13 +100,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div ng-controller="myEducation" class="col-md-4 col-md-offset-2 aor-card">
-                                <h3><i class="fa fa-mortar-board"> </i><strong> EDUCATION </strong></h3>
-                                <h4><strong> Faculty of Science - Computer Science </strong></h3>
-                    <h4><strong> Recent courses completed: </strong></h3>
-                    <p ng-repeat="c in coursesCompleted"><span class="label label-default" style="font-size:100%; display:inline-block">
-                        {{c}}
-                    </span></p>
+                            <div class="col-md-4 col-md-offset-2 aor-card">
+                               
                 </div>
             </div>
         </div>
@@ -130,25 +125,41 @@
     </div>
     <!-- CONTACT -->
     <div ng-controller="myContact" class="page-section" id="contact">
-    <div class="container aor-card">
+    <div class="container">
+    <div class="row">
+
+    <div ng-controller="myEducation" class="col-md-4 aor-card">
+                                <h3 style="padding-top: 5px;"><i class="fa fa-mortar-board"> </i><strong> EDUCATION </strong></h3>
+                                <h4><strong> Faculty of Science - Computer Science </strong></h3>
+                                <h4><strong> Recent courses completed: </strong></h3>
+                        <p ng-repeat="c in coursesCompleted">
+                        <span class="label label-default" style="font-size:100%; display:inline-block">
+                        {{c}}
+                    </span></p>
+                </div>
+
+        <div class="col-md-5 col-md-offset-1 aor-card">
         <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-            <h2><strong> CONTACT </strong></h2>
+            <h2 style="padding-top: 5px;"><strong> CONTACT </strong></h2>
             <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-                <input type="text" name="name" ng-model="name" class="form-control input" placeholder="Name" ng-class="{'has-error':userForm.name.$invalid && !userForm.name.$pristine}" required>
+                <input type="text" name="name" ng-model="form_name" class="form-control input" placeholder="Name" ng-class="{'has-error':userForm.name.$invalid && !userForm.name.$pristine}" required>
                <p ng-show="userForm.name.$invalid && !userForm.name.$pristine" class="help-block">You name is required.</p>
             </div>
             <div class="form-group" ng-class="{ 'has-error' : userForm.email.$invalid && !userForm.email.$pristine }">
-                <input type="email" name="email" ng-model="email" class="form-control"  placeholder="Email Address" required>
+                <input type="email" name="email" ng-model="form_email" class="form-control"  placeholder="Email Address" required>
                 <p ng-show="userForm.email.$invalid && !userForm.email.$pristine" class="help-block">Enter a valid email.</p>
             </div>
             <div class="form-group">
-                <input type="number" name="phone" ng-model="phone" class="form-control" placeholder="Phone Number">
+                <input type="number" name="phone" ng-model="form_phone" class="form-control" placeholder="Phone Number">
             </div>
             <div class="form-group">
-                 <textarea class="form-control" name="message" ng-model="message" rows="3" placeholder="Message"></textarea>
+                 <textarea class="form-control" name="msg_text" ng-model="msg_text" rows="3" placeholder="Message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
+        </div>
+         
+    </div>
     </div>
     </div>
     </div>

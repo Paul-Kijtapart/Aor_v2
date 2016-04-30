@@ -74,7 +74,10 @@
       "CSS"
     ],
     "icon": "",
-    "images": [],
+    "images": [
+    "image/projects/goTronShiviz.png",
+    "image/projects/goTronEvent.png"
+    ],
     "link": "",
     "github": "https://github.com/napon/GoTron"
   }
